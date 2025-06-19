@@ -1,0 +1,187 @@
+* {font-family: 'lora', fallback-font, sans-serif;box-sizing: border-box;}
+
+.logo {
+  width: 130px;
+}
+
+.carousel-caption {
+  bottom: 40%;
+  text-shadow: 0 5px 8px rgb(0, 0, 0);
+  
+}
+
+.carousel-title{
+  font-size: 80px;
+}
+
+.carousel-caption:hover {
+  transform: translateY(-5px);
+  color: #ffd013;
+}
+
+header {
+    text-align: center;
+    font-size: 35px; 
+    font-weight:bold;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    }
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Container for flexboxes */
+section {
+display: -webkit-flex;
+display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+-webkit-flex: 1;
+-ms-flex: 1;
+flex: 1;
+background: #ffffff;
+padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 20px;
+text-align: center;
+}
+
+h2 {
+    scroll-margin-top: 120px; 
+}
+
+.border-text {
+position:absolute;
+top: -20px;
+background-color: #FBF8EF;
+text-align: center;
+}
+
+.border-container {
+position: sticky;
+top: 120px;
+line-height: 2;
+padding: 30px;
+background-color: #FBF8EF;
+border: 2px solid #ffd013;
+width: 180px;
+height: 250px;
+margin: auto;
+    }
+
+.border-text {
+position: absolute;
+top: -18px; /* Adjust to center the text on the border */
+left: 50%; /* Position horizontally */
+transform: translateX(-50%); /* Shift left by half the text's width to center */
+background: #FBF8EF; /* Match the background color to "cover" the border */
+padding: 0 10px;
+text-align: center;
+color: #ffaa0c;
+}
+
+/* Style the content */
+article {
+-webkit-flex: 3;
+-ms-flex: 3;
+flex: 3;
+background-color: #f1f1f1;
+padding: 30px;
+}
+
+.travel-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-location {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    background-color: #FFB433;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    color:white;
+    background-color: #ffd013;
+  }
+
+  .insertimg {
+    width: 40rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+/* Style the footer */
+footer {
+background-color: #ffffff;
+padding: 10px;
+text-align: center;
+color: rgb(0, 0, 0);
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+}
+
